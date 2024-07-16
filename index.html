@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Splash Slide</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div id="splash-screen"></div>
+
+        <div class="hidden w-screen h-screen">
+            <div id="screen-1" class="relative w-full h-full">
+                <img src="./assets/images/1.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+            <div id="screen-2" class="relative w-full h-full">
+                <img src="./assets/images/2.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+            <div id="screen-3" class="relative w-full h-full">
+                <img src="./assets/images/3.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+            <div id="screen-4" class="relative w-full h-full">
+                <img src="./assets/images/4.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+            <div id="screen-5" class="relative w-full h-full">
+                <img src="./assets/images/5.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+            <div id="screen-6" class="relative w-full h-full">
+                <img src="./assets/images/6.jpeg" alt="pln"
+                    class="absolute object-cover w-full h-full">
+                <div
+                    class="h-full w-full absolute bg-white opacity-[.62] flex items-center justify-center">
+                    <h1
+                        class="text-black font-bold opacity-65 text-7xl md:text-[224px] text-center">Untuk</h1>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script src="./assets/js/splash.js"></script>
+    <script>
+        const splashScreen = new SplashScreen({
+            id: "splash-screen",
+            screens: [
+                { image: "./assets/images/1.jpeg", text: "Listrik" },
+                { image: "./assets/images/2.jpeg", text: "Untuk" },
+                { image: "./assets/images/3.jpeg", text: "Kehidupan" },
+                { image: "./assets/images/4.jpeg", text: "Yang" },
+                { image: "./assets/images/5.jpeg", text: "Lebih" },
+                { image: "./assets/images/6.jpeg", text: "Baik" },
+            ],
+        });
+        splashScreen.start();
+    </script>
+</html>
